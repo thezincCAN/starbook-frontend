@@ -1,0 +1,30 @@
+.Page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Header {
+    width: 50%;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Authors {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(73, 129, 81);
+    border-radius: 5%;
+    color: rgb(70, 161, 246);
+}
+
+.Authors div {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 3%;
+    border: 3px solid orange;
+    border-radius: 5%;
+}
