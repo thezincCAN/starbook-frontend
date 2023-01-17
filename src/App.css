@@ -5,6 +5,7 @@
 }
 
 .coverpage {
+  margin-top: 20px;
   outline: solid black .3em;
   height: 40em;
   width: 30em;

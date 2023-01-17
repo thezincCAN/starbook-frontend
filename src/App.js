@@ -1,4 +1,5 @@
 import './App.css';
+import './keyframe.css';
 import {
   BrowserRouter as Router,
   Route,
@@ -15,10 +16,11 @@ function App() {
           <div className='coverpage'>
             <h1>STAR BOOK TITLE</h1>
             <h4>Written By:<br></br>Amanda Hecht<br></br>Chad Stabler<br></br>Niki Hite</h4>
-            <img src='/images/blueStar.png'/>
-            <img src='/images/limeStar.png'/>
-            <img src='/images/orangeStar.png'/>
-            <img src='/images/burgundyStar.png'/>
+            <img className='blue' src='/images/blueStar.png'/>
+            <img className='green' src='/images/limeStar.png'/>
+            <img className='orange' src='/images/orangeStar.png'/>
+            <img className='purple' src='/images/burgundyStar.png'/>
+            <img className='clear' src='/images/clearStar2.png' height='120px'/>
             <br></br><br></br><br></br><br></br>
             <nav>
               <Link className='navLink' to='/story'>Story</Link><br></br>
