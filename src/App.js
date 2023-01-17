@@ -6,7 +6,7 @@ import {
   Link,
 } from 'react-router-dom';
 import Credits from './Pages/Credits';
-import Story from './Pages/Story';
+import MyBook from './Pages/MyBook';
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
             <img className='clear' src='/images/clearStar2.png' height='120px'/>
             <br></br><br></br><br></br><br></br>
             <nav>
-              <Link className='navLink' to='/story'>Story</Link><br></br>
+              <Link className='navLink' to='/mybook'>Story</Link><br></br>
               <Link className='navLink' to='/credits'>Authors</Link>
             </nav>
 
@@ -33,8 +33,8 @@ function App() {
       <Route exact path='/credits'>
         <Credits />
       </Route>
-      <Route exact path='/story'>
-        <Story />
+      <Route exact path='/mybook'>
+        <MyBook />
       </Route>
     </Router>
   );
