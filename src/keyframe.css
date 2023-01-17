@@ -1,0 +1,72 @@
+@keyframes clockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes counterClockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes lightToDark {
+    0% {background-color: lightblue;}
+    100% {background-color: darkblue;}
+}
+
+@keyframes up {
+    0% { bottom: 0% }
+    50% { bottom: 5% }
+    100% { bottom: 0% }
+}
+
+@keyframes down {
+    0% { top: 0% }
+    50% { top: 5% }
+    100% { top: 0% }
+}
+
+.clear {
+    position: relative;
+    animation-name: lightToDark;
+    background-size: contain;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+
+.purple {
+    position: relative;
+    animation-name: down;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+.orange {
+    position: relative;
+    animation-name: up;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+.blue {
+    animation-name: clockwise;
+    position: relative;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.green {
+    animation-name: counterClockwise;
+    position: relative;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
