@@ -28,5 +28,6 @@ jobs:
       - run: npm test --passWithNoTests
         env:
           CI: true
+          DATABASE_URL: postgres://alchemy:alchemy@postgres:5432/alchemy
           REACT_APP_SUPABASE_URL: ${{ secrets.REACT_APP_SUPABASE_URL }}
           REACT_APP_SUPABASE_KEY: ${{ secrets.REACT_APP_SUPABASE_KEY }}
