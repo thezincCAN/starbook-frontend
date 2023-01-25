@@ -13,5 +13,5 @@ app.use(cors({
 app.use(express.json());
 
 //routes
-
+app.use('/api/v1/stories', require('./controllers/stories'))
 
